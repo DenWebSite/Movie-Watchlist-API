@@ -136,37 +136,55 @@ enum WatchlistStatus {
 ```
 ## Установка и запуск 
 
-```
 ### Клонирование репозитория
+```
 git clone https://github.com//DenWebSite/Movie-Watchlist-API.git
+```
 
 ### Переход в папку
+```
 cd /movie-watchlist-api
+```
 
 ### Установка зависимостей
+```
 npm install
+```
 
 ### Создайте .env и добавьте переменные
+```
 DATABASE_URL="postgresql://username:password@localhost:5432/dbname?schema=public"
 NODE_ENV="development"
 JWT_SECRET=""
 JWT_EXPIRES_IN=""
+```
 
 ### Инициализация Prisma
+```
 npx prisma init
+```
 
 ### Создание миграции
+```
 npx prisma migrate dev --name init
+```
 
 ### Применение миграции к БД
+```
 npx prisma migrate deploy
+```
 
 ### Генерация Prisma Client
+```
 npx prisma generate
+```
 
 ### Заполните Таблицу Movies мок данными из seed.js
+```
 npm run seed
+```
 
 ### Запуск проекта
+```
 npm run dev
 ```
