@@ -52,34 +52,37 @@
 
 ---
 
-## 📁 Структура проекта 
+## 📁 Структура проекта
+
+```
 src/
 ├── config/
-│ └── db.js # Настройка Prisma Client (подключение к PostgreSQL)
+│   └── db.js                # Настройка Prisma Client (подключение к PostgreSQL)
 │
-├── controllers/ 
-│ ├── authController.js # Регистрация и вход пользователей
-│ ├── movieController.js # CRUD для фильмов
-│ └── watchlistController.js # Управление списком просмотра
+├── controllers/
+│   ├── authController.js    # Регистрация и вход пользователей
+│   ├── movieController.js   # CRUD для фильмов
+│   └── watchlistController.js # Управление списком просмотра
 │
 ├── generated/
-│ └── prisma/ # Prisma Client 
+│   └── prisma/              # Prisma Client
 │
 ├── middleware/
-│ └── authMiddleware.js # Проверка JWT-токена и защита маршрутов
+│   └── authMiddleware.js    # Проверка JWT-токена и защита маршрутов
 │
 ├── routes/
-| └── authRoutes.js # Маршруты для register, login, logout
-│ ├── movieRoutes.js # Маршруты для фильмов
-│ └── watchlistRoutes.js # Маршруты для списка просмотра
+│   ├── authRoutes.js        # Маршруты для register, login, logout
+│   ├── movieRoutes.js       # Маршруты для фильмов
+│   └── watchlistRoutes.js   # Маршруты для списка просмотра
 │
-├── utils/ 
-│ └── generateToken.js # Генерация JWT-токена и загрузка в куки
+├── utils/
+│   └── generateToken.js     # Генерация JWT-токена и загрузка в куки
 │
 ├── validators/
-│ └── watchlistValidators.js # Zod для валидации полей
+│   └── watchlistValidators.js # Zod для валидации полей
 │
-└── server.js # Точка входа
+└── server.js                # Точка входа
+```
 
 ## 🗄 Структура базы данных
 
